@@ -6,7 +6,7 @@ public class PMML4SDemo {
 
     public static void main(String[] args) {
 
-        Model model = Model.fromFile("G:\\pmml\\spark\\lr\\xml\\lr.xml");
+        Model model = Model.fromFile("lr.xml");
 
         Map<String, Object> result = model.predict(new HashMap<String, Object>() {{
             put("field_0", 2);
